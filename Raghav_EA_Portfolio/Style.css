@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d4f3d4;
+    overflow: visible;
+}
+
+/* ------------------------------------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    background-color: #d4f3d4;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+nav h1 {
+    font-weight: 600;
+    font-size: 24px;
+    padding-right: 310px;
+}
+
+nav button {
+    padding: 12px 18px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #3d693d;
+    background-color: #acf0ac;
+    box-shadow: 0 10px 20px rgba(50, 230, 80, 0.1);
+    transition: box-shadow 0.8s ease;
+    cursor: pointer;
+}
+
+nav button:hover {
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.2);
+}
+
+/* ------------------------------------------------------------ */
+
+Header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.Info h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #080808;
+}
+
+.Info p {
+    padding-top: 30px;
+    line-height: 30px;
+    padding-bottom: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #4e4e4e;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+.Info .know {
+    display: flex;
+    align-items: center;
+}
+
+.know .popup{
+        display: none;
+        font-size: 20px;    
+        position: absolute;
+        top: 360px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        background-color: #272727;
+        color: white;
+        border-radius: 10px;
+        z-index: 1000;
+        white-space: nowrap;
+        box-shadow: 0px 5px 10px #a8a8a8 ;
+}
+
+
+
+.Info button {
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease;
+}
+
+.Info button:hover {
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.2);
+}
+
+.Info button i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.Info .work {
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+.Info .contact {
+    background-color: rgb(238, 238, 238);
+}
+
+.Image Img {
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 2px solid #4e4e4e;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------------------------------ */
+
+.Projects {
+    /* background-color: #ecebeb; */
+    background: #b2e3b2;
+    border-radius: 20px;
+    width: 1250px;
+    margin: auto;
+}
+
+.Project_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px 20px 25px;
+    border-bottom: 0.6px solid #474747;
+}
+
+.Project_Header a{
+    color: #000;
+    text-decoration: none;
+}
+
+.Project_Header h1 {
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.Project_Header button {
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease;
+}
+
+.Project_Header button:hover {
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.2);
+}
+
+.Project_Header button i {
+    padding-left: 8px;
+    color: #141414;
+}
+
+.Project_Dribbble {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.Project_Dribbble .container-project {
+    height: 430px;
+    width: 300px;
+    /* background-color: #1a1919; */
+    background-color: #e6fff5 ;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.Project_Dribbble .container-project:hover{
+    box-shadow: 10px 30px 40px rgba(10, 10, 10, 0.2);
+}
+
+.Project_Dribbble img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 4%;
+    box-shadow: 0 20px 30px rgba(71, 71, 71, 0.2);
+    margin-top: 20px;
+}
+
+.Project_Dribbble .container-text {
+    padding: 10px 30px 10px 30px;
+}
+
+.Project_Dribbble .container-text h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #253f3f ;
+    font-weight: 600;
+}
+
+.Project_Dribbble .container-text p {
+    margin-bottom: 22px;
+    color: #818181;
+    font-weight: 400;
+}
+
+.container-text button {
+    background-color: #a5f77f;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    box-shadow: 0 20px 35px rgba(194, 194, 194, 0.1);
+    transition: box-shadow 0.4s ease;
+}
+
+.container-text button:hover {
+    box-shadow: 0 30px 40px rgba(228, 228, 228, 0.2);
+}
+
+.container-text button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-text button i {
+    margin-left: 8px;
+    font-weight: 800;
+}
+
+.Projects .text-bottom {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.Work_Exp {
+    background-color: #cddaff  ;
+    border-radius: 20px;
+    width: 1250px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.Work_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px 20px 25px;
+    border-bottom: 0.6px solid #474747;
+}
+
+.Work_Header h1 {
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+.Work_Header i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.Work_Work {
+    display: flex;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Work_Work .work-show {
+    cursor: pointer;
+    color: #292828 ;
+    margin-bottom: 30px;
+    height: 130px;
+    width: 530px;
+    background-color: #d4e6fd  ;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 20px 35px rgba(41, 41, 41, 0.1);
+    transition: box-shadow 0.6s ease;
+}
+
+.Work_Work .work-show:hover{
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.2);
+}
+
+.work-show .work-text{
+    padding: 20px 0px 0px 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.work-show span p{
+    line-height: 18px;
+    margin-bottom: 18px;
+}
+
+.sneak{
+    display: flex;
+    justify-content: center;
+}
+
+.work-sneak  {
+    background-color: #6fb5ee  ;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease;
+    margin-bottom: 30px;
+}
+
+.work-sneak:hover{
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.2);}
+
+.work-sneak a{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.work-text span a{
+    color: #7066ff;
+}
+
+.work-text a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.work-text i{
+    margin-left: 8px;
+}
+
+.work-show .work-text p{
+    font-weight:600;
+    color: #313131;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.work-text h2{
+    font-size: 17px;
+}
+
+.Work_Header a{
+    text-decoration: none;
+    color:#0e0e0e;
+}
+
+/* ------------------------------------------------------------ */
+
+.Skills {
+    background-color: #ffd0aa  ;
+    border-radius: 20px;
+    width: 1250px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.Skills-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px 20px 25px;
+    border-bottom: 0.6px solid #474747;
+}
+
+.Skills-Header h1 {
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+.Skill-Header .skill-social a {
+    text-decoration: none;
+    color:#0e0e0e;
+}
+
+.Skills-Header i {
+    font-size: 30px;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.Skill_Skill {
+    display: flex;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Skill_Skill .skill-show {
+    margin-bottom: 30px;
+    height: 180px;
+    width: 1150px;
+    background-color: #fddeca ;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease;
+}
+
+.Skill_Skill .skill-show:hover{
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.2);
+}
+
+.skill-show .skill-text{
+    padding: 20px 0px 0px 20px;
+    line-height: 30px;
+}
+
+.skill-show .skill-text h2{
+    font-size: 30px;
+}
+
+.skill-show .skill-text p{
+    font-size: 20px;
+    padding-top: 8px;
+    font-weight: 500;
+    color: #272727;
+}
+
+.skill-show .skill-img{
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.skill-show .skill-img img{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.skill-text .skill-learn {
+    padding-left: 12px;
+    padding-top: 14px;
+    display: flex;
+}
+
+.skill-text .skill-learn img{
+    width: 60px;
+    height: 60px;
+    margin-right: 40px;
+}
+
+.skill-text .skill-learn .next{
+    width: 100px;
+}
+
+.skill-show button {
+    background-color: #fab283;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease;
+    margin-top: 15px;
+}
+
+.skill-show button:hover{
+    box-shadow: 0 4px 8px rgba(24, 24, 24, 0.2);
+}
+
+.skill-show button a{
+    color: #000;
+}
+
+.skill-social a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.skill-show button i{
+    margin-left: 4px;
+}
+
+
+
+/* ------------------------------------------------------------ */
+
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    padding-left: 4px;
+    color: #000;
+}
+
+
